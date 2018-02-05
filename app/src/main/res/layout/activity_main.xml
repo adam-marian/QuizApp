@@ -1,0 +1,496 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.android.astronomyquiz1.MainActivity">
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif-condensed"
+        android:text="@string/title"
+        android:background="#580b0b"
+        android:gravity="center"
+        android:textAllCaps="true"
+        android:textColor="@color/textColor"
+        android:textSize="30sp" />
+
+    <ImageView
+        android:layout_below="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="fitXY"
+        android:src="@drawable/image" />
+
+    <ScrollView
+        android:layout_below="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/card1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/cardMargin"
+                android:layout_marginRight="@dimen/cardMargin"
+                android:layout_marginTop="@dimen/cardTopMargin"
+                android:layout_marginBottom="@dimen/cardTopMargin"
+                card_view:cardCornerRadius="@dimen/cardRadius"
+                card_view:cardElevation="@dimen/cardElevation"
+                >
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:scaleType="center"
+                    android:src="@drawable/gradient" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+
+                    <TextView
+                        android:id="@+id/q1_question"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/activity_vertical_margin"
+                        android:layout_marginLeft="@dimen/checkboxMargin"
+                        android:layout_marginRight="@dimen/checkboxMargin"
+                        android:layout_marginTop="@dimen/checkboxMargin"
+                        android:text="@string/question1"
+                        android:textAlignment="center"
+                        android:textColor="@color/textColor"
+                        android:textSize="@dimen/textSize"
+
+                        />
+
+                    <CheckBox
+                        android:id="@+id/q1_a1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/q1_question"
+                        android:layout_marginLeft="@dimen/checkboxMargin"
+                        android:text="@string/q1a1"
+                        android:textColor="@color/textColor" />
+
+                    <CheckBox
+                        android:id="@+id/q1_a2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/q1_a1"
+                        android:layout_marginLeft="@dimen/checkboxMargin"
+                        android:text="@string/q1a2"
+                        android:textColor="@color/textColor" />
+
+                    <CheckBox
+                        android:id="@+id/q1_a3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/q1_a2"
+                        android:layout_marginLeft="@dimen/checkboxMargin"
+                        android:text="@string/q1a3"
+                        android:textColor="@color/textColor" />
+
+                    <CheckBox
+                        android:id="@+id/q1_a4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/q1_a3"
+                        android:layout_marginLeft="@dimen/checkboxMargin"
+                        android:text="@string/q1a4"
+                        android:textColor="@color/textColor" />
+
+                    <Button
+                        android:id="@+id/q1_button"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/q1_a4"
+                        android:onClick="checkQuestion1"
+                        android:layout_centerHorizontal="true"
+                        android:text="@string/submit" />
+
+                </RelativeLayout>
+
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/card2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/cardMargin"
+                android:layout_marginRight="@dimen/cardMargin"
+                android:layout_marginTop="@dimen/cardTopMargin"
+                android:layout_marginBottom="@dimen/cardTopMargin"
+                card_view:cardCornerRadius="@dimen/cardRadius"
+                card_view:cardElevation="@dimen/cardElevation"
+                >
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:scaleType="center"
+                    android:src="@drawable/gradient" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+
+                    <TextView
+                        android:id="@+id/q2_question"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/checkboxMargin"
+                        android:layout_marginRight="@dimen/checkboxMargin"
+                        android:layout_marginBottom="@dimen/activity_vertical_margin"
+                        android:layout_marginTop="@dimen/checkboxMargin"
+                        android:text="@string/question2"
+                        android:textAlignment="center"
+                        android:textColor="@color/textColor"
+                        android:textSize="@dimen/textSize"
+
+                        />
+
+                    <CheckBox
+                        android:id="@+id/q2_a1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/q2_question"
+                        android:layout_marginLeft="@dimen/checkboxMargin"
+                        android:text="@string/q2a1"
+                        android:textColor="@color/textColor" />
+
+                    <CheckBox
+                        android:id="@+id/q2_a2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/q2_a1"
+                        android:layout_marginLeft="@dimen/checkboxMargin"
+                        android:text="@string/q2a2"
+                        android:textColor="@color/textColor" />
+
+                    <CheckBox
+                        android:id="@+id/q2_a3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/q2_a2"
+                        android:layout_marginLeft="@dimen/checkboxMargin"
+                        android:text="@string/q2a3"
+                        android:textColor="@color/textColor" />
+
+                    <CheckBox
+                        android:id="@+id/q2_a4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/q2_a3"
+                        android:layout_marginLeft="@dimen/checkboxMargin"
+                        android:text="@string/q2a4"
+                        android:textColor="@color/textColor" />
+
+                    <Button
+                        android:id="@+id/q2_button"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/q2_a4"
+                        android:onClick="checkQuestion2"
+                        android:layout_centerHorizontal="true"
+                        android:text="@string/submit" />
+
+                </RelativeLayout>
+
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/card3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/cardMargin"
+                android:layout_marginRight="@dimen/cardMargin"
+                android:layout_marginTop="@dimen/cardTopMargin"
+                android:layout_marginBottom="@dimen/cardTopMargin"
+                card_view:cardCornerRadius="@dimen/cardRadius"
+                card_view:cardElevation="@dimen/cardElevation"
+                >
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:scaleType="center"
+                    android:src="@drawable/gradient" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+
+                    <TextView
+                        android:id="@+id/q3_question"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/checkboxMargin"
+                        android:layout_marginRight="@dimen/checkboxMargin"
+                        android:layout_marginBottom="@dimen/activity_vertical_margin"
+                        android:layout_marginTop="@dimen/checkboxMargin"
+                        android:text="@string/q3"
+                        android:textAlignment="center"
+                        android:textColor="@color/textColor"
+                        android:textSize="@dimen/textSize"
+
+                        />
+
+                    <CheckBox
+                        android:id="@+id/q3_a1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/q3_question"
+                        android:layout_marginLeft="@dimen/checkboxMargin"
+                        android:text="@string/q3a1"
+                        android:textColor="@color/textColor" />
+
+                    <CheckBox
+                        android:id="@+id/q3_a2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/q3_a1"
+                        android:layout_marginLeft="@dimen/checkboxMargin"
+                        android:text="@string/q3a2"
+                        android:textColor="@color/textColor" />
+
+                    <CheckBox
+                        android:id="@+id/q3_a3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/q3_a2"
+                        android:layout_marginLeft="@dimen/checkboxMargin"
+                        android:text="@string/q3a3"
+                        android:textColor="@color/textColor" />
+
+                    <CheckBox
+                        android:id="@+id/q3_a4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/q3_a3"
+                        android:layout_marginLeft="@dimen/checkboxMargin"
+                        android:text="@string/q3a4"
+                        android:textColor="@color/textColor" />
+
+                    <Button
+                        android:id="@+id/q3_button"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/q3_a4"
+                        android:onClick="checkQuestion3"
+                        android:layout_centerHorizontal="true"
+                        android:text="@string/submit" />
+
+                </RelativeLayout>
+
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/card4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/cardMargin"
+                android:layout_marginRight="@dimen/cardMargin"
+                android:layout_marginTop="@dimen/cardTopMargin"
+                android:layout_marginBottom="@dimen/cardTopMargin"
+                card_view:cardCornerRadius="@dimen/cardRadius"
+                card_view:cardElevation="@dimen/cardElevation"
+                >
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:scaleType="center"
+                    android:src="@drawable/gradient" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+
+                    <TextView
+                        android:id="@+id/q4_question"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/checkboxMargin"
+                        android:layout_marginRight="@dimen/checkboxMargin"
+                        android:layout_marginBottom="@dimen/activity_vertical_margin"
+                        android:layout_marginTop="@dimen/checkboxMargin"
+                        android:text="@string/q4"
+                        android:textAlignment="center"
+                        android:textColor="@color/textColor"
+                        android:textSize="@dimen/textSize"
+
+                        />
+
+                    <CheckBox
+                        android:id="@+id/q4_a1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/q4_question"
+                        android:layout_marginLeft="@dimen/checkboxMargin"
+                        android:text="@string/q4a1"
+                        android:textColor="@color/textColor" />
+
+                    <CheckBox
+                        android:id="@+id/q4_a2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/q4_a1"
+                        android:layout_marginLeft="@dimen/checkboxMargin"
+                        android:text="@string/q4a2"
+                        android:textColor="@color/textColor" />
+
+                    <CheckBox
+                        android:id="@+id/q4_a3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/q4_a2"
+                        android:layout_marginLeft="@dimen/checkboxMargin"
+                        android:text="@string/q4a3"
+                        android:textColor="@color/textColor" />
+
+                    <CheckBox
+                        android:id="@+id/q4_a4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/q4_a3"
+                        android:layout_marginLeft="@dimen/checkboxMargin"
+                        android:text="@string/q4a4"
+                        android:textColor="@color/textColor" />
+
+                    <Button
+                        android:id="@+id/q4_button"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/q4_a4"
+                        android:onClick="checkQuestion4"
+                        android:layout_centerHorizontal="true"
+                        android:text="@string/submit" />
+
+                </RelativeLayout>
+
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/card5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/cardMargin"
+                android:layout_marginRight="@dimen/cardMargin"
+                android:layout_marginTop="@dimen/cardTopMargin"
+                android:layout_marginBottom="@dimen/cardTopMargin"
+                card_view:cardCornerRadius="@dimen/cardRadius"
+                card_view:cardElevation="@dimen/cardElevation"
+                >
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:scaleType="center"
+                    android:src="@drawable/gradient" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+
+                    <TextView
+                        android:id="@+id/q5_question"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/checkboxMargin"
+                        android:layout_marginRight="@dimen/checkboxMargin"
+                        android:layout_marginBottom="@dimen/activity_vertical_margin"
+                        android:layout_marginTop="@dimen/checkboxMargin"
+                        android:text="@string/q5"
+                        android:textAlignment="center"
+                        android:textColor="@color/textColor"
+                        android:textSize="@dimen/textSize"
+
+                        />
+
+                    <CheckBox
+                        android:id="@+id/q5_a1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/q5_question"
+                        android:layout_marginLeft="@dimen/checkboxMargin"
+                        android:text="@string/q5a1"
+                        android:textColor="@color/textColor" />
+
+                    <CheckBox
+                        android:id="@+id/q5_a2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/q5_a1"
+                        android:layout_marginLeft="@dimen/checkboxMargin"
+                        android:text="@string/q5a2"
+                        android:textColor="@color/textColor" />
+
+                    <CheckBox
+                        android:id="@+id/q5_a3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/q5_a2"
+                        android:layout_marginLeft="@dimen/checkboxMargin"
+                        android:text="@string/q5a3"
+                        android:textColor="@color/textColor" />
+
+                    <CheckBox
+                        android:id="@+id/q5_a4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/q5_a3"
+                        android:layout_marginLeft="@dimen/checkboxMargin"
+                        android:text="@string/q5a4"
+                        android:textColor="@color/textColor" />
+
+                    <Button
+                        android:id="@+id/q5_button"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/q5_a4"
+                        android:onClick="checkQuestion5"
+                        android:shadowColor="@color/titleColor"
+                        android:layout_centerHorizontal="true"
+                        android:text="@string/submit" />
+
+                </RelativeLayout>
+
+            </android.support.v7.widget.CardView>
+
+            <Button
+                android:id="@+id/get_score_button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginLeft="@dimen/checkboxMargin"
+                android:layout_marginRight="@dimen/checkboxMargin"
+                android:text="Final Score"
+                android:onClick="getScore"
+                android:backgroundTint="@color/titleColor"
+                android:textColor="@color/textColor"
+                android:textSize="24sp"
+                android:fontFamily="sans-serif-light"/>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</RelativeLayout>

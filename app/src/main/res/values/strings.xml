@@ -1,0 +1,35 @@
+<resources>
+    <string name="app_name">Quiz App</string>
+    <string name="title">The Lord of the Rings Quiz</string>
+    <string name="missing">Missing Answer</string>
+    <string name="correct">That is correct!</string>
+    <string name="incorrect">That is incorrect!</string>
+    <string name="question1">Where does Gandalf fall in Moria?</string>
+    <string name="q1a1">The Endless Stair</string>
+    <string name="q1a2">The Chamber of Mazarbul</string>
+    <string name="q1a3">Durin\'s Tower</string>
+    <string name="q1a4">The Bridge of Khazad-dum</string>
+    <string name="submit">Submit</string>
+    <string name="question2">In which town would you find The Inn of the Prancing Pony?</string>
+    <string name="q2a1">Numenor</string>
+    <string name="q2a2">Frogmorton</string>
+    <string name="q2a3">Buckeberry</string>
+    <string name="q2a4">Bree</string>
+    <string name="q3">What is the name of the Southern Kingdom of Middle Earth,founded by the Dunedain?</string>
+    <string name="q3a1">Mordor</string>
+    <string name="q3a2">Gondor</string>
+    <string name="q3a3">Rohan</string>
+    <string name="q3a4">Helms Deep</string>
+    <string name="q4">What creatures are used to open the Black Gates of Mordor?</string>
+    <string name="q4a1">Mountain Trolls</string>
+    <string name="q4a2">Goblins</string>
+    <string name="q4a3">Uruk-hai</string>
+    <string name="q4a4">Mumakil</string>
+    <string name="q5">Who is the Lady of Lothlorien?</string>
+    <string name="q5a1">Elendil</string>
+    <string name="q5a2">Arwen</string>
+    <string name="q5a3">Ellesar</string>
+    <string name="q5a4">Galadriel</string>
+
+
+</resources>
