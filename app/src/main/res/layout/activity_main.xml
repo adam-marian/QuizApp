@@ -11,45 +11,41 @@
         android:id="@+id/title"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:fontFamily="sans-serif-condensed"
-        android:text="@string/title"
         android:background="#580b0b"
+        android:fontFamily="sans-serif-condensed"
         android:gravity="center"
+        android:text="@string/title"
         android:textAllCaps="true"
         android:textColor="@color/textColor"
         android:textSize="30sp" />
 
     <ImageView
-        android:layout_below="@+id/title"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
+        android:layout_below="@+id/title"
         android:scaleType="fitXY"
         android:src="@drawable/image" />
 
     <ScrollView
-        android:layout_below="@+id/title"
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="match_parent"
+        android:layout_below="@+id/title">
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="vertical">
 
-
-
-
             <android.support.v7.widget.CardView
                 android:id="@+id/card1"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/cardTopMargin"
                 android:layout_marginLeft="@dimen/cardMargin"
                 android:layout_marginRight="@dimen/cardMargin"
                 android:layout_marginTop="@dimen/cardTopMargin"
-                android:layout_marginBottom="@dimen/cardTopMargin"
                 card_view:cardCornerRadius="@dimen/cardRadius"
-                card_view:cardElevation="@dimen/cardElevation"
-                >
+                card_view:cardElevation="@dimen/cardElevation">
 
                 <ImageView
                     android:layout_width="match_parent"
@@ -60,7 +56,6 @@
                 <RelativeLayout
                     android:layout_width="match_parent"
                     android:layout_height="match_parent">
-
 
                     <TextView
                         android:id="@+id/q1_question"
@@ -73,9 +68,7 @@
                         android:text="@string/question1"
                         android:textAlignment="center"
                         android:textColor="@color/textColor"
-                        android:textSize="@dimen/textSize"
-
-                        />
+                        android:textSize="@dimen/textSize" />
 
                     <CheckBox
                         android:id="@+id/q1_a1"
@@ -118,8 +111,8 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_below="@id/q1_a4"
-                        android:onClick="checkQuestion1"
                         android:layout_centerHorizontal="true"
+                        android:onClick="checkQuestion1"
                         android:text="@string/submit" />
 
                 </RelativeLayout>
@@ -130,13 +123,12 @@
                 android:id="@+id/card2"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/cardTopMargin"
                 android:layout_marginLeft="@dimen/cardMargin"
                 android:layout_marginRight="@dimen/cardMargin"
                 android:layout_marginTop="@dimen/cardTopMargin"
-                android:layout_marginBottom="@dimen/cardTopMargin"
                 card_view:cardCornerRadius="@dimen/cardRadius"
-                card_view:cardElevation="@dimen/cardElevation"
-                >
+                card_view:cardElevation="@dimen/cardElevation">
 
                 <ImageView
                     android:layout_width="match_parent"
@@ -148,21 +140,18 @@
                     android:layout_width="match_parent"
                     android:layout_height="match_parent">
 
-
                     <TextView
                         android:id="@+id/q2_question"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/activity_vertical_margin"
                         android:layout_marginLeft="@dimen/checkboxMargin"
                         android:layout_marginRight="@dimen/checkboxMargin"
-                        android:layout_marginBottom="@dimen/activity_vertical_margin"
                         android:layout_marginTop="@dimen/checkboxMargin"
                         android:text="@string/question2"
                         android:textAlignment="center"
                         android:textColor="@color/textColor"
-                        android:textSize="@dimen/textSize"
-
-                        />
+                        android:textSize="@dimen/textSize" />
 
                     <CheckBox
                         android:id="@+id/q2_a1"
@@ -205,8 +194,8 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_below="@id/q2_a4"
-                        android:onClick="checkQuestion2"
                         android:layout_centerHorizontal="true"
+                        android:onClick="checkQuestion2"
                         android:text="@string/submit" />
 
                 </RelativeLayout>
@@ -217,13 +206,12 @@
                 android:id="@+id/card3"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/cardTopMargin"
                 android:layout_marginLeft="@dimen/cardMargin"
                 android:layout_marginRight="@dimen/cardMargin"
                 android:layout_marginTop="@dimen/cardTopMargin"
-                android:layout_marginBottom="@dimen/cardTopMargin"
                 card_view:cardCornerRadius="@dimen/cardRadius"
-                card_view:cardElevation="@dimen/cardElevation"
-                >
+                card_view:cardElevation="@dimen/cardElevation">
 
                 <ImageView
                     android:layout_width="match_parent"
@@ -235,21 +223,18 @@
                     android:layout_width="match_parent"
                     android:layout_height="match_parent">
 
-
                     <TextView
                         android:id="@+id/q3_question"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/activity_vertical_margin"
                         android:layout_marginLeft="@dimen/checkboxMargin"
                         android:layout_marginRight="@dimen/checkboxMargin"
-                        android:layout_marginBottom="@dimen/activity_vertical_margin"
                         android:layout_marginTop="@dimen/checkboxMargin"
-                        android:text="@string/q3"
+                        android:text="@string/question3"
                         android:textAlignment="center"
                         android:textColor="@color/textColor"
-                        android:textSize="@dimen/textSize"
-
-                        />
+                        android:textSize="@dimen/textSize" />
 
                     <CheckBox
                         android:id="@+id/q3_a1"
@@ -292,8 +277,8 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_below="@id/q3_a4"
-                        android:onClick="checkQuestion3"
                         android:layout_centerHorizontal="true"
+                        android:onClick="checkQuestion3"
                         android:text="@string/submit" />
 
                 </RelativeLayout>
@@ -304,13 +289,12 @@
                 android:id="@+id/card4"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/cardTopMargin"
                 android:layout_marginLeft="@dimen/cardMargin"
                 android:layout_marginRight="@dimen/cardMargin"
                 android:layout_marginTop="@dimen/cardTopMargin"
-                android:layout_marginBottom="@dimen/cardTopMargin"
                 card_view:cardCornerRadius="@dimen/cardRadius"
-                card_view:cardElevation="@dimen/cardElevation"
-                >
+                card_view:cardElevation="@dimen/cardElevation">
 
                 <ImageView
                     android:layout_width="match_parent"
@@ -322,65 +306,66 @@
                     android:layout_width="match_parent"
                     android:layout_height="match_parent">
 
-
                     <TextView
                         android:id="@+id/q4_question"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/activity_vertical_margin"
                         android:layout_marginLeft="@dimen/checkboxMargin"
                         android:layout_marginRight="@dimen/checkboxMargin"
-                        android:layout_marginBottom="@dimen/activity_vertical_margin"
                         android:layout_marginTop="@dimen/checkboxMargin"
-                        android:text="@string/q4"
+                        android:text="@string/question4"
                         android:textAlignment="center"
                         android:textColor="@color/textColor"
-                        android:textSize="@dimen/textSize"
+                        android:textSize="@dimen/textSize" />
 
-                        />
-
-                    <CheckBox
-                        android:id="@+id/q4_a1"
+                    <RadioGroup
+                        android:id="@+id/rb_q4"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_below="@id/q4_question"
-                        android:layout_marginLeft="@dimen/checkboxMargin"
-                        android:text="@string/q4a1"
-                        android:textColor="@color/textColor" />
+                        android:orientation="vertical">
 
-                    <CheckBox
-                        android:id="@+id/q4_a2"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_below="@id/q4_a1"
-                        android:layout_marginLeft="@dimen/checkboxMargin"
-                        android:text="@string/q4a2"
-                        android:textColor="@color/textColor" />
+                        <RadioButton
+                            android:id="@+id/q4_a1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/checkboxMargin"
+                            android:text="@string/q4a1"
+                            android:textColor="@color/textColor" />
 
-                    <CheckBox
-                        android:id="@+id/q4_a3"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_below="@id/q4_a2"
-                        android:layout_marginLeft="@dimen/checkboxMargin"
-                        android:text="@string/q4a3"
-                        android:textColor="@color/textColor" />
+                        <RadioButton
+                            android:id="@+id/q4_a2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/checkboxMargin"
+                            android:text="@string/q4a2"
+                            android:textColor="@color/textColor" />
 
-                    <CheckBox
-                        android:id="@+id/q4_a4"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_below="@id/q4_a3"
-                        android:layout_marginLeft="@dimen/checkboxMargin"
-                        android:text="@string/q4a4"
-                        android:textColor="@color/textColor" />
+                        <RadioButton
+                            android:id="@+id/q4_a3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/checkboxMargin"
+                            android:text="@string/q4a3"
+                            android:textColor="@color/textColor" />
+
+                        <RadioButton
+                            android:id="@+id/q4_a4"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/checkboxMargin"
+                            android:text="@string/q4a4"
+                            android:textColor="@color/textColor" />
+                    </RadioGroup>
 
                     <Button
                         android:id="@+id/q4_button"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:layout_below="@id/q4_a4"
-                        android:onClick="checkQuestion4"
+                        android:layout_below="@id/rb_q4"
                         android:layout_centerHorizontal="true"
+                        android:onClick="checkQuestion4"
                         android:text="@string/submit" />
 
                 </RelativeLayout>
@@ -391,13 +376,12 @@
                 android:id="@+id/card5"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/cardTopMargin"
                 android:layout_marginLeft="@dimen/cardMargin"
                 android:layout_marginRight="@dimen/cardMargin"
                 android:layout_marginTop="@dimen/cardTopMargin"
-                android:layout_marginBottom="@dimen/cardTopMargin"
                 card_view:cardCornerRadius="@dimen/cardRadius"
-                card_view:cardElevation="@dimen/cardElevation"
-                >
+                card_view:cardElevation="@dimen/cardElevation">
 
                 <ImageView
                     android:layout_width="match_parent"
@@ -409,66 +393,214 @@
                     android:layout_width="match_parent"
                     android:layout_height="match_parent">
 
-
                     <TextView
                         android:id="@+id/q5_question"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/activity_vertical_margin"
                         android:layout_marginLeft="@dimen/checkboxMargin"
                         android:layout_marginRight="@dimen/checkboxMargin"
-                        android:layout_marginBottom="@dimen/activity_vertical_margin"
                         android:layout_marginTop="@dimen/checkboxMargin"
-                        android:text="@string/q5"
+                        android:text="@string/question5"
                         android:textAlignment="center"
                         android:textColor="@color/textColor"
-                        android:textSize="@dimen/textSize"
+                        android:textSize="@dimen/textSize" />
 
-                        />
-
-                    <CheckBox
-                        android:id="@+id/q5_a1"
+                    <RadioGroup
+                        android:id="@+id/rb_q5"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_below="@id/q5_question"
-                        android:layout_marginLeft="@dimen/checkboxMargin"
-                        android:text="@string/q5a1"
-                        android:textColor="@color/textColor" />
+                        android:orientation="vertical">
 
-                    <CheckBox
-                        android:id="@+id/q5_a2"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_below="@id/q5_a1"
-                        android:layout_marginLeft="@dimen/checkboxMargin"
-                        android:text="@string/q5a2"
-                        android:textColor="@color/textColor" />
+                        <RadioButton
+                            android:id="@+id/q5_a1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/checkboxMargin"
+                            android:text="@string/q5a1"
+                            android:textColor="@color/textColor" />
 
-                    <CheckBox
-                        android:id="@+id/q5_a3"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_below="@id/q5_a2"
-                        android:layout_marginLeft="@dimen/checkboxMargin"
-                        android:text="@string/q5a3"
-                        android:textColor="@color/textColor" />
+                        <RadioButton
+                            android:id="@+id/q5_a2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/checkboxMargin"
+                            android:text="@string/q5a2"
+                            android:textColor="@color/textColor" />
 
-                    <CheckBox
-                        android:id="@+id/q5_a4"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_below="@id/q5_a3"
-                        android:layout_marginLeft="@dimen/checkboxMargin"
-                        android:text="@string/q5a4"
-                        android:textColor="@color/textColor" />
+                        <RadioButton
+                            android:id="@+id/q5_a3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/checkboxMargin"
+                            android:text="@string/q5a3"
+                            android:textColor="@color/textColor" />
+
+                        <RadioButton
+                            android:id="@+id/q5_a4"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/checkboxMargin"
+                            android:text="@string/q5a4"
+                            android:textColor="@color/textColor" />
+                    </RadioGroup>
 
                     <Button
                         android:id="@+id/q5_button"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:layout_below="@id/q5_a4"
-                        android:onClick="checkQuestion5"
-                        android:shadowColor="@color/titleColor"
+                        android:layout_below="@id/rb_q5"
                         android:layout_centerHorizontal="true"
+                        android:onClick="checkQuestion5"
+                        android:text="@string/submit" />
+
+                </RelativeLayout>
+
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/card6"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/cardTopMargin"
+                android:layout_marginLeft="@dimen/cardMargin"
+                android:layout_marginRight="@dimen/cardMargin"
+                android:layout_marginTop="@dimen/cardTopMargin"
+                card_view:cardCornerRadius="@dimen/cardRadius"
+                card_view:cardElevation="@dimen/cardElevation">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:scaleType="center"
+                    android:src="@drawable/gradient" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:id="@+id/q6_question"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/activity_vertical_margin"
+                        android:layout_marginLeft="@dimen/checkboxMargin"
+                        android:layout_marginRight="@dimen/checkboxMargin"
+                        android:layout_marginTop="@dimen/checkboxMargin"
+                        android:text="@string/question6"
+                        android:textAlignment="center"
+                        android:textColor="@color/textColor"
+                        android:textSize="@dimen/textSize" />
+
+                    <RadioGroup
+                        android:id="@+id/rb_q6"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/q6_question"
+                        android:orientation="vertical">
+
+                        <RadioButton
+                            android:id="@+id/q6_a1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/checkboxMargin"
+                            android:text="@string/q6a1"
+                            android:textColor="@color/textColor" />
+
+                        <RadioButton
+                            android:id="@+id/q6_a2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/checkboxMargin"
+                            android:text="@string/q6a2"
+                            android:textColor="@color/textColor" />
+
+                        <RadioButton
+                            android:id="@+id/q6_a3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/checkboxMargin"
+                            android:text="@string/q6a3"
+                            android:textColor="@color/textColor" />
+
+                        <RadioButton
+                            android:id="@+id/q6_a4"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/checkboxMargin"
+                            android:text="@string/q6a4"
+                            android:textColor="@color/textColor" />
+                    </RadioGroup>
+
+                    <Button
+                        android:id="@+id/q6_button"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/rb_q6"
+                        android:layout_centerHorizontal="true"
+                        android:onClick="checkQuestion6"
+                        android:text="@string/submit" />
+
+                </RelativeLayout>
+
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/card7"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/cardTopMargin"
+                android:layout_marginLeft="@dimen/cardMargin"
+                android:layout_marginRight="@dimen/cardMargin"
+                android:layout_marginTop="@dimen/cardTopMargin"
+                card_view:cardCornerRadius="@dimen/cardRadius"
+                card_view:cardElevation="@dimen/cardElevation">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:scaleType="center"
+                    android:src="@drawable/gradient" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:id="@+id/q7_question"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/activity_vertical_margin"
+                        android:layout_marginLeft="@dimen/checkboxMargin"
+                        android:layout_marginRight="@dimen/checkboxMargin"
+                        android:layout_marginTop="@dimen/checkboxMargin"
+                        android:text="@string/question7"
+                        android:textAlignment="center"
+                        android:textColor="@color/textColor"
+                        android:textSize="@dimen/textSize" />
+
+                    <EditText
+                        android:id="@+id/nameField"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/q7_question"
+                        android:layout_marginLeft="@dimen/checkboxMargin"
+                        android:backgroundTint="@color/gradientStart"
+                        android:hint="@string/edittext_hint"
+                        android:imeOptions="actionDone"
+                        android:inputType="textCapWords"
+                        android:textColor="@color/textColor"
+                        android:textColorHint="@android:color/holo_green_dark"
+                        android:textSize="@dimen/hint_textSize" />
+
+                    <Button
+                        android:id="@+id/q7_button"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/nameField"
+                        android:layout_centerHorizontal="true"
+                        android:onClick="checkQuestion7"
                         android:text="@string/submit" />
 
                 </RelativeLayout>
@@ -482,12 +614,12 @@
                 android:layout_gravity="center_horizontal"
                 android:layout_marginLeft="@dimen/checkboxMargin"
                 android:layout_marginRight="@dimen/checkboxMargin"
-                android:text="Final Score"
-                android:onClick="getScore"
                 android:backgroundTint="@color/titleColor"
+                android:fontFamily="sans-serif-light"
+                android:onClick="getScore"
+                android:text="Final Score"
                 android:textColor="@color/textColor"
-                android:textSize="24sp"
-                android:fontFamily="sans-serif-light"/>
+                android:textSize="24sp" />
 
         </LinearLayout>
 
